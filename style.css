@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --social-links-border-color: #ffffff;
 }
 
 .light {
@@ -22,6 +23,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.158);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --social-links-border-color: #000000;
 }
 
 body {
@@ -103,6 +105,7 @@ sendo assim fazendo dessa maneira:
 
 #switch button:hover{
   outline: 8px solid var(--highlight-color);
+  cursor: pointer;
 }
 
 #switch span {
@@ -157,11 +160,12 @@ ul li a:hover {
   align-items: center;
   padding: 16px;
   border-radius: 50%;
-  transition: background 0.2s;
 }
 
 #social-links a:hover {
   background: var(--highlight-color);
+  border: 1px solid var(--social-links-border-color);
+  transition: background 0.2s;
 }
 
 footer {
